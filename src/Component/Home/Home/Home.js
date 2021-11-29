@@ -4,7 +4,6 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import Sidebar from '../../Shared/Sidebar/Sidebar';
 import image from '../../../images/mk.jpg';
-import './Home.css'
 // import Contact from '../../Pages/Contact/Contact';
 // import About from '../../Pages/About/About';
 
