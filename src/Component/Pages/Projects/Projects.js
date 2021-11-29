@@ -10,7 +10,7 @@ const Projects = () => {
                     <Col md={11}>
                         <Row>
                             <Col>
-                                <h1 className="text-uppercase fw-bold text-center my-5">My Portfolio</h1>
+                                <h1 className="text-uppercase text-secondary fw-bold text-center my-5">My <span className="text-color">Portfolio</span></h1>
                             </Col>
                         </Row>
                         <Row className="ps-5">

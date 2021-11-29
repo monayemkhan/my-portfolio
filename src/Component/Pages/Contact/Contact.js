@@ -24,7 +24,7 @@ const Contact = () => {
                 <Col md={11}>
                     <Row>
                         <Col>
-                            <h1 className="text-uppercase fw-bold text-center my-5">Contact <span className="text-primary">Me</span> </h1>
+                            <h1 className="text-uppercase fw-bold text-secondary text-center my-5">Contact <span className="text-color">Me</span></h1>
                         </Col>
                     </Row>
                     <Row>
@@ -48,7 +48,7 @@ const Contact = () => {
                             </div>
                         </Col>
                         <Col>
-                            <div className="p-3">
+                            <div className="">
                                 <h4 className="">Get in Touch</h4>
                                 <div>
                                     <form ref={form} onSubmit={sendEmail}>

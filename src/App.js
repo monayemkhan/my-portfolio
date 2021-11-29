@@ -8,7 +8,7 @@ import Projects from './Component/Pages/Projects/Projects';
 
 function App() {
   return (
-    <div >
+    <div>
       <Router>
         <Switch>
           <Route exact path="/">
