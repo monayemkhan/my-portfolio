@@ -64,7 +64,7 @@ const Contact = () => {
                                             <textarea className="form-control" placeholder="Massage *" name="" id="" style={{ height: '150px' }}></textarea>
                                         </div>
                                         <div className="input-group mt-4">
-                                            <input className="btn btn-danger fw-bold" type="submit" value="Send Me" />
+                                            <input className="btn contact-btn-color fw-bold" type="submit" value="Send Me" />
                                         </div>
                                     </form>
                                 </div>
@@ -76,7 +76,6 @@ const Contact = () => {
                     <Sidebar></Sidebar>
                 </Col>
             </Row>
-
         </Container>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faDownload, faEnvelopeOpen, faHouseUser, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faComments, faDownload, faEnvelopeOpen, faHouseUser, faUser } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -30,6 +30,12 @@ const Sidebar = () => {
                         <li className="icon-box my-4 text-center side text-decoration-none">
                             <FontAwesomeIcon className="text-secondary fs-6 ms-3" icon={faEnvelopeOpen} />
                             <div className="dis">Contact</div>
+                        </li>
+                    </NavLink>
+                    <NavLink to="/blogs" className="text-decoration-none">
+                        <li className="icon-box my-4 text-center side text-decoration-none">
+                            <FontAwesomeIcon className="text-secondary fs-6 ms-3" icon={faComments} />
+                            <div className="dis">Blogs</div>
                         </li>
                     </NavLink>
                     <NavLink to="/resume" className="text-decoration-none">

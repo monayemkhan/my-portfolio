@@ -17,43 +17,44 @@ const About = () => {
                     </Row>
                     {/* personal info */}
                     <Row className="personal-info ps-5">
-                        <Col md={5} className="">
+                        <Col md={6} className="">
                             <Row>
                                 <Col>
-                                    <h3 className="fw-bold text-secondary">Personal Information</h3>
+                                    <h3 className="fw-bold text-secondary border-bottom border-dark">Personal Information</h3>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="mt-2">
                                 <Col md="5">
                                     <p> <strong>Name:</strong>  Md. Monaam Khan</p>
-                                    <p>Age: 24+</p>
-                                    <p>Freelance: Available</p>
-                                    <p>Nationality: Bangladesh</p>
-
+                                    <p> <strong>Age:</strong> 24+</p>
+                                    <p> <strong>Freelance:</strong> Available</p>
+                                    <p> <strong>Nationality:</strong> Bangladesh</p>
                                 </Col>
                                 <Col md={7}>
-                                    <p>Langues: Bangla, English</p>
-                                    <p>Address: Khilkhet, Dhaka</p>
-                                    <p>Phone: (+880) 1709 291129</p>
-                                    <p>Email: monaamkhanet@gmail.com</p>
+                                    <p> <strong>Langues:</strong> Bangla, English</p>
+                                    <p> <strong>Address:</strong> Khilkhet, Dhaka</p>
+                                    <p> <strong>Phone:</strong> (+880) 1709 291129</p>
+                                    <p> <strong>Email:</strong> monaamkhanet@gmail.com</p>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                    <FontAwesomeIcon className="text-secondary fs-4 me-3" icon={faFacebookSquare} />
-                                    <FontAwesomeIcon className="text-secondary fs-4 me-3" icon={faLinkedin} />
-                                    <FontAwesomeIcon className="text-secondary fs-4 me-3" icon={faGithubSquare} />
+                                    <div className="text-center">
+                                        <FontAwesomeIcon className="text-secondary fs-3 me-3" icon={faFacebookSquare} />
+                                        <FontAwesomeIcon className="text-secondary fs-3 me-3" icon={faLinkedin} />
+                                        <FontAwesomeIcon className="text-secondary fs-3 me-3" icon={faGithubSquare} />
+                                    </div>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col md={7}>
-                            <h3 className="fw-bold text-secondary">Skill</h3>
-                            <Row>
+                        <Col md={6}>
+                            <h3 className="fw-bold text-secondary border-bottom border-dark">Skill</h3>
+                            <Row className="mt-3">
                                 <Col>
                                     <h6>HTML-5</h6>
                                     <h6>CSS-3</h6>
                                     <h6>BOOTSTRAP</h6>
-                                    <h6>MATERIALS UI</h6>
+                                    <h6>MATERIAL UI</h6>
                                     <h6>TAILWIND CSS</h6>
                                 </Col>
                                 <Col>
@@ -63,12 +64,19 @@ const About = () => {
                                     <h6>NODE.JS</h6>
                                     <h6>MONGODB</h6>
                                 </Col>
+                                <Col>
+                                    <h6>ES6</h6>
+                                    <h6>FIREBASE</h6>
+                                    <h6>REST API</h6>
+                                    <h6>CHROME DEV TOOLS</h6>
+                                    <h6>GIT BUSH</h6>
+                                </Col>
                             </Row>
                         </Col>
                     </Row>
                     {/* my skill  */}
                     <Row className="ps-5">
-                        <h3 className="fw-bold text-secondary">Education</h3>
+                        <h3 className="fw-bold text-secondary mt-3">Education</h3>
                         <Col className="">
                             <div className="card">
                                 <div class="card-body edu-bg-color">
@@ -83,14 +91,14 @@ const About = () => {
                                 <div className="card-body edu-bg-color">
                                     <h5 className="card-title text-light">Diploma in Electrical Engineering</h5>
                                     <h6 className="card-subtitle mb-2 text-muted">Ayub-Hena Polytechnic Institute</h6>
-                                    <p className="card-text text-light">July 2011 - Dec 2015</p>
+                                    <p className="card-text text-light">2011-12 - 2015</p>
                                 </div>
                             </div>
                         </Col>
                         <Col>
                             <div className="card edu-bg-color">
                                 <div className="card-body">
-                                    <h5 className="card-title text-light">secondary School Certificate (SSC) </h5>
+                                    <h5 className="card-title text-light">Secondary School Certificate (SSC) </h5>
                                     <h6 className="card-subtitle mb-2 text-muted">Karimganj Pilot High School</h6>
                                     <p className="card-text text-light">Jan 2006 - Dec 2011</p>
                                 </div>

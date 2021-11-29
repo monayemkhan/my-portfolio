@@ -1,12 +1,13 @@
 .App {
   /* text-align: center; */
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
 /* home page sytles */
+
 /* home page name styles */
 .name-color {
   color: #72b626;
@@ -49,8 +50,23 @@ img {
     border-color: #72b626;
     color: white;
 }
+.btn-text {
+  color: #72b626;
+}
+.btn-text:hover {
+  color: white;
+}
 
-
+/* contact form button styles*/
+.contact-btn-color {
+  background-color: #72b626;
+    color: black;
+}
+.contact-btn-color:hover {
+  background-color: white;
+  border-color: #72b626;
+  color: #72b626;
+}
 
 /* sidebar menu styles */
 .side{
@@ -66,7 +82,6 @@ width: 50px;
     background: #72b626;
     cursor: pointer;
 }
-
 /* sidebar menu name styles */
 .dis {
     z-index: -1;
@@ -85,7 +100,6 @@ width: 50px;
     margin: 0;
     background: #72b626;
 }
-
 /* sidebar menu hover styles */
 .side:hover .dis {
   opacity: 1;
