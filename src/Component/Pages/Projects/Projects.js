@@ -1,6 +1,51 @@
 import React from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Sidebar from '../../Shared/Sidebar/Sidebar';
+import Project from '../Project/Project';
+
+const portfolios = [
+    {
+        id: 1,
+        name: 'Honda-Bike Full-stack Web App',
+        img: 'https://i.ibb.co/wW0fQv0/honda-bike.jpg',
+        live: '#',
+        github: '#',
+        server: '#',
+    },
+    {
+        id: 2,
+        name: 'Mk-Global-Travel Web App',
+        img: 'https://i.ibb.co/SwjKQTf/mk-global-travel.jpg',
+        live: '#',
+        github: '#',
+        server: '#',
+    },
+    {
+        id: 3,
+        name: 'Heat-Care-Hospital Website',
+        img: 'https://i.ibb.co/8MLXPHN/heart-care-hospital.jpg',
+        live: '#',
+        github: '#',
+        server: '#',
+    },
+    {
+        id: 4,
+        name: 'Online-edu Web App Demo',
+        img: 'https://i.ibb.co/R76WjsS/online-edu.jpg',
+        live: '#',
+        github: '#',
+        server: '#',
+    },
+    {
+        id: 5,
+        name: 'Qatar-Concert Web Demo',
+        img: 'https://i.ibb.co/xz6g2Mb/qatar-world-cup.jpg',
+        live: '#',
+        github: '#',
+        server: '#',
+    },
+]
+
 
 const Projects = () => {
     return (
@@ -13,19 +58,15 @@ const Projects = () => {
                                 <h1 className="text-uppercase text-secondary fw-bold text-center my-5">My <span className="text-color">Portfolio</span></h1>
                             </Col>
                         </Row>
-                        <Row className="ps-5">
-                            <Col className="">
-                                <Card style={{ width: '18rem' }}>
-                                    <Card.Img variant="top" src="holder.js/100px180" />
-                                    <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
-                                        <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of
-                                            the card's content.
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
+                        <Row className="ms-4">
+                            {
+                                // map portfolio data
+                                portfolios.map(portfolio => <Project
+                                    key={portfolio.id}
+                                    portfolio={portfolio}
+                                ></Project>
+                                )
+                            }
                         </Row>
                     </Col>
                     <Col md={1}>

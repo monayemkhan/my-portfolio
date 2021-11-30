@@ -1,26 +1,20 @@
 import React from 'react';
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import './Project.css'
 
-const Project = () => {
+const Project = ({ portfolio }) => {
+    const { name, live, img } = portfolio;
+
     return (
-        <div>
-            <Container fluid className="home ">
-                <Row>
-                    <Col>
-                        <Card className="text-center m-3">
-                            <Card.Img className="images" variant="top" src="" />
-                            <Card.Body>
-                                <Card.Title className="fw-bold"></Card.Title>
-                                <Card.Text>
-                                    <p></p>
-                                </Card.Text>
-                                <Button variant="primary">Read more</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+        <Col md={4} className=" mt-2">
+            <div className=" box-item all-project text-center text-light mt-3"
+                style={{ width: "23rem", height: "13rem", backgroundImage: `url(${img})`, backgroundSize: "cover", }}>
+                <div className="single-project d-flex flex-column justify-content-center w-100 h-100 p-3">
+                    <h6 className="fs-5 w-100 align-self-center project-btn">{name}</h6>
+                    <a href={live} className="btn project-btn btn-outline-secondary w-50 fw-bold align-self-center">View Project</a>
+                </div>
+            </div>
+        </Col>
     );
 };
 

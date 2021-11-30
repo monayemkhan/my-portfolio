@@ -1,0 +1,41 @@
+ .box-item {
+     
+     border-radius: 10px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ .box-item:hover {
+     
+     border-radius: 10px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgb(80, 238, 48) 0px -2px 6px 0px inset;
+     transition: .5s ease-in-out !important;
+    transition-delay: .1s;
+ }
+
+ .single-project{
+    display: none;
+    
+}
+
+ .single-project .project-btn {
+     display: none;
+     
+ }
+
+.all-project:hover .single-project{
+    background-color: #72b626;
+    transition: .5s ease-in-out !important;
+    transition-delay: .1s;
+    border-radius: 10px;
+    
+}
+.all-project:hover a {
+    color: white;
+}
+
+.all-project:hover .single-project .project-btn {
+    display: block;
+    /* border: white; */
+    width: 25px;
+    
+}

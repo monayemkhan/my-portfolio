@@ -12,13 +12,13 @@ const Home = () => {
                 <Row>
                     <Col md={11}>
                         <Row>
-                            <Col md={5}>
+                            <Col md={4} >
                                 <div className="bg-style"></div>
-                                <div className="rounded-3 ps-4 my-4 home-img">
-                                    <img className="" src={image} alt="" />
+                                <div className="rounded-3 ps-4 my-4 home-img align-self-start">
+                                    <img className="home-img" src={image} alt="" />
                                 </div>
                             </Col>
-                            <Col md={6} >
+                            <Col md={8} >
                                 <div className="align-middle p-3">
                                     <div className="align-middle">
                                         <h1 className="text-uppercase fw-bold name-color"> ___ I'm Md. Monaam Khan</h1>
