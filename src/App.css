@@ -17,38 +17,38 @@
 }
 /* home page bg styles */
 .bg-style {
-    background-color: #72b626;
-    position: fixed;
-    height: 200%;
-    width: 100%;
-    transform: rotate(-15deg);
-    left: -83%;
-    top: -50%;
+  background-color: #72b626;
+  position: fixed;
+  height: 200%;
+  width: 100%;
+  transform: rotate(-15deg);
+  left: -83%;
+  top: -50%;
 }
 .home-img img {
-    width: 100%;
-    height: calc(90vh - 80px);
-    
+  width: 100%;
+  height: calc(100vh - 80px);
 }
 .home-img {
     position: relative;
     border-radius: 25px;
-    height: 20px;
-    box-shadow: 1em;
+}
+.home-text {
+  position: relative;
 }
 /* resume download button styles */
 .resume-btn {
-    background-color: white;
-    color: black;
-    border-color: #72b626;
+  background-color: white;
+  color: black;
+  border-color: #72b626;
 }
 .icon-color {
-    color: black;
+  color: black;
 }
 .resume-btn:hover {
-    background-color: #72b626;
-    border-color: #72b626;
-    color: white;
+  background-color: #72b626;
+  border-color: #72b626;
+  color: white;
 }
 .btn-text {
   color: #72b626;
@@ -60,58 +60,72 @@
 /* contact form button styles*/
 .contact-btn-color {
   background-color: #72b626;
-    color: black;
+  color: white;
 }
 .contact-btn-color:hover {
   background-color: white;
   border-color: #72b626;
   color: #72b626;
 }
+.address-icon{
+  color: #72b626;
+}
 
 /* sidebar menu styles */
-.side{
-width: 50px;
-    height: 50px;
-    list-style: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    transition: .3s;
-    margin: 20px 0;
-    border-radius: 50%;
-    background: #72b626;
-    cursor: pointer;
+.side {
+  width: 50px;
+  height: 50px;
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  margin: 20px 0;
+  border-radius: 50%;
+  background: #72b626;
+  cursor: pointer;
 }
 /* sidebar menu name styles */
 .dis {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    color: white;
-    line-height: 50px;
-    font-weight: 500;
-    transition: all .3s;
-    border-radius: 30px;
-    text-transform: uppercase;
-    padding: 0 25px 0 30px;
-    height: 50px;
-    margin: 0;
-    background: #72b626;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  color: white;
+  line-height: 50px;
+  font-weight: 500;
+  transition: all .3s;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 0 25px 0 30px;
+  height: 50px;
+  margin: 0;
+  background: #72b626;
 }
 /* sidebar menu hover styles */
 .side:hover .dis {
   opacity: 1;
-    right: 27px;
-    margin: 0;
-    text-align: center;
-    border-radius: 30px 0 0 30px;
+  right: 27px;
+  margin: 0;
+  text-align: center;
+  border-radius: 30px 0 0 30px;
 }
 
 /* education bg styles */
 .edu-bg-color {
-  background-color: #72b626;
+  /* background-color: #72b626; */
+  border: 1px solid #72b626;
+  border-radius: 10px;
+}
+.card .rounded-3 {
+  border: 1px solid #72b626;
+}
+.about-icon {
+  color: #72b626;
+}
+.border-color {
+  color: #72b626;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -119,6 +133,7 @@ width: 50px;
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -143,3 +158,4 @@ width: 50px;
     transform: rotate(360deg);
   }
 }
+

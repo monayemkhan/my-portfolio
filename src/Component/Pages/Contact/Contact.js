@@ -33,16 +33,16 @@ const Contact = () => {
                                 <h4>DON'T BE SHY !</h4>
                                 <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                                 <div className="address mt-4 ">
-                                    <h5><FontAwesomeIcon className="icon fs-5 mx-2 fw-bold text-secondary" icon={faMap} />Address Point</h5>
+                                    <h5><FontAwesomeIcon className="icon fs-5 mx-2 fw-bold address-icon" icon={faMap} />Address Point</h5>
                                     <h6 className="mx-5 text-secondary"> BKash-Bhaban, Beparipara Road, Khilkhet-1229</h6>
                                     <p className="mx-5 text-secondary">Dhaka, Bangladesh</p>
                                 </div>
                                 <div className="address">
-                                    <h5><FontAwesomeIcon className="icon fs-5 mx-2 fw-bold text-secondary" icon={faEnvelope} />Mail Me</h5>
+                                    <h5><FontAwesomeIcon className="icon fs-5 mx-2 fw-bold address-icon" icon={faEnvelope} />Mail Me</h5>
                                     <p className="mx-5 text-secondary">monaamkhanet@gmail.com</p>
                                 </div>
                                 <div className="address my-1">
-                                    <h5><FontAwesomeIcon className="icon fs-5 mx-2 fw-bold text-secondary" icon={faPhone} />Call Me</h5>
+                                    <h5><FontAwesomeIcon className="icon fs-5 mx-2 fw-bold address-icon" icon={faPhone} />Call Me</h5>
                                     <p className="mx-5 text-secondary">+880 1709 291129</p>
                                 </div>
                             </div>
@@ -52,16 +52,16 @@ const Contact = () => {
                                 <h4 className="">Get in Touch</h4>
                                 <div>
                                     <form ref={form} onSubmit={sendEmail}>
-                                        <div className="input-group mt-4">
-                                            <input className="form-control border-0 border-bottom me-3" placeholder="Your Name *" type="text" />
-                                            <input className="form-control border-0 border-bottom me-3" placeholder="Email *" type="text" />
+                                        <div className="input-group mt-3">
+                                            <input className="form-control me-3" placeholder="Your Name" type="text" />
+                                            <input className="form-control me-3" placeholder="Your Email" type="text" />
+                                        </div>
+                                        <div className="input-group mt-3">
+                                            <input className="form-control me-3" placeholder="Your Phone" type="text" />
+                                            <input className="form-control me-3" placeholder="Subject" type="text" />
                                         </div>
                                         <div className="input-group mt-4">
-                                            <input className="form-control border-0 border-bottom me-3" placeholder="phone *" type="text" />
-                                            <input className="form-control border-0 border-bottom me-3" placeholder="Subject" type="text" />
-                                        </div>
-                                        <div className="input-group mt-4">
-                                            <textarea className="form-control" placeholder="Massage *" name="" id="" style={{ height: '150px' }}></textarea>
+                                            <textarea className="form-control" placeholder="Massage" name="" id="" style={{ height: '150px' }}></textarea>
                                         </div>
                                         <div className="input-group mt-4">
                                             <input className="btn contact-btn-color fw-bold" type="submit" value="Send Me" />
